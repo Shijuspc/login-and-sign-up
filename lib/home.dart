@@ -18,13 +18,18 @@ class _HomeState extends State<Home> {
       body: Center(
         child: Column(
           children: [
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute
-                (builder: (context) => RadioL(),));}, child: Text("Radio button List")),
-            ElevatedButton(onPressed: (){
-              Navigator.push
-              (context,MaterialPageRoute
-                (builder: (context) => Radio1(),));}, child: Text("Radio button")),
+
+            Container(margin: EdgeInsets.all(10),
+              child: ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute
+                  (builder: (context) => RadioL(),));}, child: Text("Radio button List")),
+            ),
+            Container(margin: EdgeInsets.all(10),
+              child: ElevatedButton(onPressed: (){
+                Navigator.push
+                (context,MaterialPageRoute
+                  (builder: (context) => Radio1(),));}, child: Text("Radio button")),
+            ),
           ],
         ),
       ),
