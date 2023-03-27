@@ -14,18 +14,18 @@ class _Radio1State extends State<Radio1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(),
+    appBar: AppBar(title: Center(child: Text("Gender"))),
       body: Column(
         children: [
 
           ListTile(
-            title: Text("male"),
+            title: Text("Male"),
             leading: Radio(value: "male", groupValue: gen, onChanged: (click){setState(() {
               gen=click;
             });}),
           ),
           ListTile(
-            title: Text("female"),
+            title: Text("Female"),
             leading: Radio(value: "female", groupValue: gen, onChanged: (click){setState(() {
               gen=click;
             });}),
